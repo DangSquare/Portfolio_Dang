@@ -393,12 +393,6 @@ button:hover{
   
 }
 
-/*.skills_content{
-
-}
-
-*/
-
 /*Qualification*/
 .qualification_tabs{
     display: flex;
@@ -673,17 +667,40 @@ button:hover{
 }
 
 /*scroll up*/
-.scrollup{
-    position: ;
-    right: 1rem;
-    bottom: 0;
+
+@media only screen and (max-width: 768px){
+    .scrollup{
+        position: fixed;
+        bottom: 120px;
+        right: 20px;
+        width: 40px;
+        height: 40px;
+        text-align: center ;
+        line-height: 40px;
+        background-color: var(--first-color);
+        opacity: .8;
+        padding: 0 .3rem;
+        border-radius: .4rem;
+        z-index: var(--z-tooltip);
+        transition: .4rem;
+    }
+}
+
+/*.scrollup{
+    position: absolute;
+    bottom: 120px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    text-align: center ;
+    line-height: 40px;
     background-color: var(--first-color);
     opacity: .8;
     padding: 0 .3rem;
     border-radius: .4rem;
     z-index: var(--z-tooltip);
     transition: .4rem;
-}
+}*/
 
 .scrollup:hover{
     background-color: var(--first-color-alt);
@@ -694,6 +711,9 @@ button:hover{
     color: #FFF;
 }
 
+.show-scroll{
+    bottom: 1rem;
+}
 
 /*media queries*/
 @media  screen and (max-width: 350px) {

@@ -73,3 +73,10 @@ function scrollHeader(){
     else nav.classList.remove('scroll-header')
 }
 window.addEventListener('scroll', scroll-header)
+
+/*Scroll top*/
+window.addEventListener("scroll", function(){
+    const scrollUp=document.getElementById("scrollup");
+    if(this.scrollY >= 1160) scrollUp.classList.add("show-scroll");
+    else scrollUp.classList.remove("show-scroll");
+})
